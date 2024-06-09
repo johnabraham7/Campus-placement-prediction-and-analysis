@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container result-container">
+        <h2>Prediction Result</h2>
+        <p>Placement Probability: {{ prediction_proba }}</p>
+        {% if improvement_areas %}
+            <h3>Improvement Areas:</h3>
+            <ul>
+                {% for area in improvement_areas %}
+                    <li>{{ area }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

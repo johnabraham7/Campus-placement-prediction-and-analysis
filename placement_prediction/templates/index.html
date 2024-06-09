@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placement Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Placement Prediction Form</h2>
+        <form action="/predict" method="post">
+            <label>Communication Skills:</label><br>
+            <input type="text" name="Communication"><br>
+            <label>Aptitude and Reasoning:</label><br>
+            <input type="text" name="Aptitude_and_Reasoning"><br>
+            <label>CGPA:</label><br>
+            <input type="text" name="CGPA"><br>
+            <label>Certifications:</label><br>
+            <input type="text" name="Certifications"><br>
+            <label>Coding Skills:</label><br>
+            <input type="text" name="Coding_Skills"><br>
+            <label>Hackathons Participated:</label><br>
+            <input type="text" name="Hackathons"><br>
+            <label>Coding Contests Participated:</label><br>
+            <input type="text" name="Coding_Contests"><br>
+            <label>Internships:</label><br>
+            <input type="text" name="Internships"><br>
+            <label>Projects:</label><br>
+            <input type="text" name="Projects"><br>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
